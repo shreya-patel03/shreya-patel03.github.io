@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Arimo, "Helvetica Neue", "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: black;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -127,8 +127,6 @@ hr {
 
 
 .container {
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -148,8 +146,6 @@ hr {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255, 255, 255, .5);
-  background-color: #202020;
 }
 
 @media (min-width: 48em) {
@@ -170,7 +166,7 @@ hr {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: Arimo, "Abril Fatface", serif;
   font-size: 3.25rem;
 }
 
@@ -204,6 +200,6 @@ a.sidebar-nav-item:focus {
 @media (min-width: 64em) {
   .content {
     margin-left: 18rem;
-    margin-right: 0rem;
+    margin-right: 0rem;  
   }
 }
