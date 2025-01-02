@@ -154,7 +154,7 @@ hr {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 15rem;
     text-align: left;
   }
 }
@@ -203,7 +203,11 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 18rem;
+    margin-left: 15rem;
     margin-right: 0rem;  
   }
+}
+
+.content.container div.page p img {
+  display: block;
 }
