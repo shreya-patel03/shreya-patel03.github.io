@@ -210,4 +210,5 @@ a.sidebar-nav-item:focus {
 
 .content.container div.page p img {
   display: block;
+  margin: .5rem;
 }
