@@ -167,7 +167,7 @@ hr {
   color: #fff;
   margin-top: 0;
   font-family: Arimo, "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 2rem;
 }
 
 .sidebar-nav {
@@ -193,8 +193,8 @@ a.sidebar-nav-item:focus {
 }
 
 @media (min-width: 48em) {
-  .sidebar-sticky {
-    /*position: absolute;*/
+  .sidebar-sticky .sidebar-nav {
+    position: absolute;
     right: 1rem;
     bottom: 1rem;
     left: 1rem;
