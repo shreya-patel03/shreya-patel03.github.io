@@ -201,7 +201,7 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 48em) {
   .content {
     margin-left: 15rem;
     margin-right: 0rem;  
