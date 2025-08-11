@@ -1,0 +1,1 @@
+Refer to https://github.com/Codeinwp/Ideal-Image-Slider-JS for documentation.

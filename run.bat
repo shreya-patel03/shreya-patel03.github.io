@@ -1,0 +1,1 @@
+docker run --rm --volume="%CD%:/srv/jekyll" --publish 4000:4000 -p 35729:35729 -it jekyll/jekyll:4.2.2 /bin/bash -c "gem install webrick && jekyll serve --livereload --incremental"

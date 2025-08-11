@@ -16,6 +16,12 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+
+  <link rel="stylesheet" href="/assets/slider/ideal-image-slider.css">
+	<link rel="stylesheet" href="/assets/slider/default.css">
+  <script src="/assets/slider/ideal-image-slider.js"></script>
+  <script src="/assets/slider/iis-bullet-nav.js"></script>
+  <script src="/assets/slider/iis-captions.js"></script>
 </head>
 
 <body>
@@ -57,33 +63,51 @@
   <div class="content container">
     <div class="page">
       <!--h1 class="page-title"></h1-->
-      <div style="background-color: white;">
-        <img src="Form/Form_01.jpg" width="100%" />
-        <img src="Form/Form_02.jpg" width="100%" />
-        <img src="Form/Form_03.jpg" width="100%" />
-        <img src="Form/Form_04.jpg" width="100%" />
-        <img src="Form/Form_05.jpg" width="100%" />
-        <img src="Form/Form_06.jpg" width="100%" />
-        <img src="Form/Form_07.jpg" width="100%" />
-        <img src="Form/Form_08.jpg" width="100%" />
-        <img src="Form/Form_09.jpg" width="100%" />
-        <img src="Form/Form_10.jpg" width="100%" />
-        <img src="Form/Form_11.jpg" width="100%" />
-        <img src="Form/Form_12.jpg" width="100%" />
-        <img src="Form/Form_13.jpg" width="100%" />
-        <img src="Form/Form_14.jpg" width="100%" />
-        <img src="Form/Form_15.jpg" width="100%" />
-        <img src="Form/Form_16.jpg" width="100%" />
-        <img src="Form/Form_17.jpg" width="100%" />
-        <img src="Form/Form_12.jpg" width="100%" />
-        <img src="Form/Form_18.jpg" width="100%" />
-        <img src="Form/Form_19.jpg" width="100%" />
-        <img src="Form/Form_20.jpg" width="100%" />
-        <img src="Form/Form_21.jpg" width="100%" />
-        <img src="Form/Form_22.jpg" width="100%" />
-        <img src="Form/Form_23.jpg" width="100%" />
+
+      <div id="slider" style="background-color: white;">
+        <img src="Form/Form_01.jpg" width="100%" title="Design Priciples 2" alt="Shreya Patel DP2" />
+        <img data-src="Form/Form_02.jpg" width="100%" src="" title="RISD Places" alt="The <em>best</em> place <strong>to be!</strong>"/>
+        <img data-src="Form/Form_03.jpg" data-src-2x="Form/Form_03.jpg" width="100%" src="" data-caption="#caption-3"/>
+        <img data-src="Form/Form_04.jpg" width="100%" />
+        <img data-src="Form/Form_05.jpg" width="100%" />
+        <img data-src="Form/Form_06.jpg" width="100%" />
+        <img data-src="Form/Form_07.jpg" width="100%" />
+        <img data-src="Form/Form_08.jpg" width="100%" />
+        <img data-src="Form/Form_09.jpg" width="100%" />
+        <img data-src="Form/Form_10.jpg" width="100%" />
+        <img data-src="Form/Form_11.jpg" width="100%" />
+        <img data-src="Form/Form_12.jpg" width="100%" />
+        <img data-src="Form/Form_13.jpg" width="100%" />
+        <img data-src="Form/Form_14.jpg" width="100%" />
+        <img data-src="Form/Form_15.jpg" width="100%" />
+        <img data-src="Form/Form_16.jpg" width="100%" />
+        <img data-src="Form/Form_17.jpg" width="100%" />
+        <img data-src="Form/Form_12.jpg" width="100%" />
+        <img data-src="Form/Form_18.jpg" width="100%" />
+        <img data-src="Form/Form_19.jpg" width="100%" />
+        <img data-src="Form/Form_20.jpg" width="100%" />
+        <img data-src="Form/Form_21.jpg" width="100%" />
+        <img data-src="Form/Form_22.jpg" width="100%" />
+        <img data-src="Form/Form_23.jpg" width="100%" />
       </div>
+
+      <div id="caption-3" style="display:none;">
+        <h3>RISD Museum</h3>
+        <p>Our <a href="#">own museum</a> by the artists for the artists.</p>
+      </div>
+
+      <script>
+        var slider = new IdealImageSlider.Slider({
+          selector: '#slider',
+          height: 400, // Required but can be set by CSS
+          interval: 4000
+        });
+        slider.addCaptions();
+        slider.addBulletNav();
+        slider.start();
+      </script>
     </div>
   </div>
+  
 </body>
 </html>
