@@ -1,1 +1,2 @@
 Refer to https://github.com/Codeinwp/Ideal-Image-Slider-JS for documentation.
+docker run --rm --volume="C:\Users\shrey\shreya-patel03.github.io:/srv/jekyll" -it -p 4000:4000 jekyll/jekyll:3 jekyll serve --watch --drafts
