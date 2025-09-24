@@ -15,6 +15,13 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+
+  <link rel="stylesheet" href="/assets/slider/ideal-image-slider.css">
+	<link rel="stylesheet" href="/assets/slider/default.css">
+  <script src="/assets/slider/ideal-image-slider.js"></script>
+  <script src="/assets/slider/iis-bullet-nav.js"></script>
+  <script src="/assets/slider/iis-captions.js"></script>
+
 </head>
 
 <body>
@@ -57,13 +64,34 @@
         <img src="Revey/Revey_02.jpg" width="100%" />
         <img src="Revey/Revey_03.jpg" width="100%" />
         <img src="Revey/Revey_04.jpg" width="100%" />
-        <img src="Revey/Revey_05.jpg" width="100%" />
+
+        <div id="slider" style="background-color: white;">
+          <img data-src="HealthStar/HealthStar_05.jpg" width="100%" />
+          <img data-src="HealthStar/HealthStar_05_Sketch1.jpg" width="100%" />
+          <img data-src="HealthStar/HealthStar_05_Sketch2.jpg" width="100%" />
+          <img data-src="HealthStar/HealthStar_05_Sketch3.jpg" width="100%" />
+          <img data-src="HealthStar/HealthStar_05_Sketch4.jpg" width="100%" />
+          <img data-src="HealthStar/HealthStar_05_Sketch5.jpg" width="100%" />
+          <img data-src="HealthStar/HealthStar_05_Sketch6.jpg" width="100%" />
+        </div>
+       
+        <script>
+          var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 4000
+          });
+          slider.addCaptions();
+          slider.addBulletNav();
+          slider.start();
+        </script>
+
         <img src="Revey/Revey_06.jpg" width="100%" />
         <img src="Revey/Revey_07.jpg" width="100%" />
         <img src="Revey/Revey_08.jpg" width="100%" />
         <img src="Revey/Revey_09.jpg" width="100%" />
         <img src="Revey/Revey_10.jpg" width="100%" />
         <img src="Revey/Revey_11.jpg" width="100%" />
+        <img src="Revey/Revey_12.jpg" width="100%" />
       </div>
     </div>
   </div>
