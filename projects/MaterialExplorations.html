@@ -16,6 +16,12 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+
+  <link rel="stylesheet" href="/assets/slider/ideal-image-slider.css">
+	<link rel="stylesheet" href="/assets/slider/default.css">
+  <script src="/assets/slider/ideal-image-slider.js"></script>
+  <script src="/assets/slider/iis-bullet-nav.js"></script>
+  <script src="/assets/slider/iis-captions.js"></script>
 </head>
 
 <body>
@@ -55,12 +61,29 @@
       <!--h1 class="page-title"></h1-->
       <div style="background-color: white;">
         <img src="MaterialExplorations/MaterialExplorations_01.jpg" width="100%" />
-        <img src="MaterialExplorations/MaterialExplorations_02.jpg" width="100%" />
+        
+        <div id="slider" style="background-color: white;">
+          <img data-src="MaterialExplorations/MaterialExplorations_02.jpg" width="100%" />
+          <img data-src="MaterialExplorations/MaterialExplorations_02_Sketch1.jpg" width="100%" />
+          <img data-src="MaterialExplorations/MaterialExplorations_02_Sketch2.jpg" width="100%" />
+        </div>
+       
+        <script>
+          var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 4000
+          });
+          slider.addCaptions();
+          slider.addBulletNav();
+          slider.start();
+        </script>
+
         <img src="MaterialExplorations/MaterialExplorations_03.jpg" width="100%" />
         <img src="MaterialExplorations/MaterialExplorations_04.jpg" width="100%" />
         <img src="MaterialExplorations/MaterialExplorations_05.jpg" width="100%" />
         <img src="MaterialExplorations/MaterialExplorations_06.jpg" width="100%" />
         <img src="MaterialExplorations/MaterialExplorations_07.jpg" width="100%" />
+        <img src="MaterialExplorations/MaterialExplorations_08.jpg" width="100%" />
       </div>
     </div>
   </div>
