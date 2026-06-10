@@ -77,6 +77,16 @@
           <img data-src="Revey/Revey_05_Sketch5.jpg" width="100%" />
           <img data-src="Revey/Revey_05_Sketch6.jpg" width="100%" />
         </div>
+
+        <script>
+          var slider1 = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 4000
+          });
+          slider1.addCaptions();
+          slider1.addBulletNav();
+          slider1.start();
+        </script>
        
         <img src="Revey/Revey_06.jpg" width="100%" />
 
@@ -89,13 +99,13 @@
         </div>        
 
         <script>
-          var slider = new IdealImageSlider.Slider({
+          var slider2 = new IdealImageSlider.Slider({
             selector: '#slider',
             interval: 4000
           });
-          slider.addCaptions();
-          slider.addBulletNav();
-          slider.start();
+          slider2.addCaptions();
+          slider2.addBulletNav();
+          slider2.start();
         </script>
 
         <img src="Revey/Revey_07.jpg" width="100%" />

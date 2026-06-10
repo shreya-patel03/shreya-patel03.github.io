@@ -76,11 +76,31 @@
           <img data-src="OhSnap_03_Image6.jpg" width="100%" />
         </div>
 
+        <script>
+          var slider1 = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 4000
+          });
+          slider1.addCaptions();
+          slider1.addBulletNav();
+          slider1.start();
+        </script>
+
         <div id="slider2" style="background-color: white;">
           <img data-src="OhSnap/OhSnap_04.jpg" width="100%" />
           <img data-src="OhSnap/OhSnap_04_Sketch1.jpg" width="100%" />
           <img data-src="OhSnap/OhSnap_04_Sketch2.jpg" width="100%" />
         </div>
+
+        <script>
+          var slider2 = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 4000
+          });
+          slider2.addCaptions();
+          slider2.addBulletNav();
+          slider2.start();
+        </script>
        
         <img src="OhSnap/OhSnap_05.jpg" width="100%" />
         <img src="OhSnap/OhSnap_06.jpg" width="100%" />
@@ -94,13 +114,13 @@
         </div>
 
         <script>
-          var slider = new IdealImageSlider.Slider({
+          var slider3 = new IdealImageSlider.Slider({
             selector: '#slider',
             interval: 4000
           });
-          slider.addCaptions();
-          slider.addBulletNav();
-          slider.start();
+          slider3.addCaptions();
+          slider3.addBulletNav();
+          slider3.start();
         </script>
 
       </div>
